@@ -1,4 +1,4 @@
 # Excel-project
 
 
-![Sales Dashboard](Excel-dashboard.png)
+![Sales](Excel-dashboard.png)
