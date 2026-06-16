@@ -88,6 +88,7 @@ Sales-Analytics-Dashboard/
 ![Sales Dashboard](Excel-dashboard.png)
 
 ### **Key Metrics Displayed**
+
 | Metric | Description |
 |-------|-------------|
 | **Total Sales** | Gross revenue from all orders. |
@@ -118,46 +119,7 @@ erDiagram
     FACT_TABLE ||--o{ PAYMENT_METHOD : ""
     PRODUCT ||--o{ CATEGORY : ""
 
-    FACT_TABLE {
-        int OrderID PK
-        int ProductID FK
-        int CustomerID FK
-        int SalesPersonID FK
-        int QuantitySold
-        string PaymentMethod FK
-        int QuantityReturned
-        date OrderDate
-        decimal Sales
-        decimal Cost
-        decimal Returns
-    }
-
-    PRODUCT {
-        int ProductID PK
-        string ProductName
-        string Category FK
-        decimal SalesPrice
-        decimal CostPrice
-    }
-
-    SALESPERSON {
-        int SalesPersonID PK
-        string Name
-    }
-
-    CUSTOMER {
-        int CustomerID PK
-    }
-
-    CATEGORY {
-        string Category PK
-    }
-
-    PAYMENT_METHOD {
-        string Method PK
-    }
-
-
+````
 🧩 Macros Included
 
 
@@ -170,15 +132,15 @@ erDiagram
   
     
       RefreshAllData
-      Refreshes all pivot tables, charts, and slicers with updated data.
+      Refreshes all pivot tables, charts, and slicers with updated data
     
     
       ClearAllFilters
-      Resets all slicers to show all data (no filters applied).
+      Resets all slicers to show all data (no filters applied)
     
     
       UpdateDashboard
-      Recalculates all formulas and updates dashboard visuals.
+      Recalculates all formulas and updates dashboard visuals
     
   
 
@@ -217,6 +179,6 @@ Refer to the Data Analytics section in Notion (Sales) for additional context and
 This project is intended for internal use within the Data Analytics team. Distribution outside the organization requires prior approval.
 
 
-✅ Built with Excel | 📊 Powered by Data | 🚀 Driven by Insights
+✅ Built with Excel | 📊 Powered by Data | 🚀 Driven by Insights"
 
 
